@@ -1,0 +1,24 @@
+block meta
+  if keywords
+    meta(content = keywords, name = "keywords")
+  if description
+    meta(content = description, name = "description")
+  if author
+    meta(content = author, name = "author")
+  meta(charset="UTF-8")
+  meta(content = "IE=edge,chrome=1", "http-equiv" = "X-UA-Compatible")
+  meta(content = "width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0", name = "viewport")
+
+block title
+  title=title
+
+block style
+  link(rel = "stylesheet", href = "src/stylesheet/style.css")
+    
+//- icons
+link(href = iconHref, rel = "icon")
+//- if web_iconPath
+  - iconSizes = 'iphone','ipad','iphone-retina','ipad-retina'
+  - for n in 0..(iconSizes.length - 1)
+    link(rel = "apple-touch-icon", href = web_iconPath+iconSizes[n]+".png")/
+  link(rel = "image_src", href = web_iconPath+'fb.jpg', type = 'image/jpeg')/

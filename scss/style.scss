@@ -1,0 +1,20 @@
+/* @import url('https://fonts.googleapis.com/css?family=Sonsie+One'); */
+
+$box_width: 1080px;
+$phone: 568px;
+$pad: 768px;
+$pc: 1280px;
+$fontSize: 14px;
+$transit: .3s;
+
+@import "compass";
+@import "compass/reset";
+@import "compass/css3";
+@import "mix.scss";
+@import "animate.scss";
+
+@import "settings/color";
+@import "settings/settings";
+
+// @include animate(fadeIn);
+// @include animate(fadeOut);
